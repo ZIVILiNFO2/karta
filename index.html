@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная карта района</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Меню слева -->
+        <div class="menu">
+
+  <div class="project">
+                <h3>ПРОЕКТЫ КОМПЛЕКСНОЙ ПРОГРАММЫ СОЦИАЛЬНО - ЭКОНОМИЧЕСКОГО РАЗВИТИЯ 2025-2030 г.</h3>
+                <ul>
+                    <li data-category="pd0">ВСЕ ПРОЕКТЫ</li>
+                </ul>
+            </div>
+            <!-- ИНВЕСТИЦИОННЫЕ  ПРОЕКТЫ -->
+            <div class="project">
+                <h3>ИНВЕСТИЦИОННЫЕ  ПРОЕКТЫ</h3>
+                <ul>
+                    <li data-category="iproj1">Промышленность</li>
+                    <li data-category="iproj2">Сельское хозяйство</li>
+                    <li data-category="iproj3">Туризм</li>
+                    <li data-category="iproj4">Строительство</li>
+                    <li data-category="iproj5">Торговля и общественное питание</li>
+                    <li data-category="iproj6">Все проекты</li>
+                    <!-- Добавьте остальные 8 пунктов -->
+                </ul>
+            </div>
+
+            <!-- ИНФРАСТУКТУРНЫЕ ПРОЕКТЫ -->
+            <div class="project">
+                <h3>ИНФРАСТУКТУРНЫЕ ПРОЕКТЫ</h3>
+                <ul>
+                    <li data-category="dor">Строительство, ЖКХ</li>
+                  	<li data-category="zdrav">Здравохранение</li>
+                    <li data-category="cult">Культура</li>
+	<li data-category="obraz">Образование</li>
+                    <li data-category="fks">Физическая культура и спорт</li>
+	<li data-category="epr">Экология и природопользование</li>
+                    <li data-category="turizm">Туризм</li>
+	<li data-category="bezop">Безопасностность</li>
+                    <li data-category="sx">Сельское хозяйство</li>
+                    <li data-category="ts">Транспортный комплекс</li>
+                    <li data-category="vp2">Все проекты</li>
+                </ul>
+            </div>
+
+            <!-- ИНИЦИАТИВНЫЕ ПРОЕКТЫ -->
+            <div class="project">
+                <h3>ИНИЦИАТИВНЫЕ ПРОЕКТЫ</h3>
+                <ul>
+                   <li data-category="ndor1">Наши дороги</li>
+                   <li data-category="dm">Детский мир</li>
+                   <li data-category="blag">Благоустройство села</li>
+                   <li data-category="rsi">Развитие сельской инфраструктуры</li>
+	<li data-category="tv">Твой выбор</li>
+<!-data-category="nfks"Территория спорта->
+	<li data-category="uv">Удивительная вода</li>
+	<li data-category="vp3">Все проекты</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Карта и изображения -->
+        <div class="map-container">
+            <img src="map522.png" alt="Карта района" class="map">
+            <!-- Контейнер для динамически добавляемых изображений -->
+            <div id="imageContainer"></div>
+        </div>
+
+        <!-- Блок для описания -->
+        <div id="descriptionBox" class="description-box">
+              <img id="projectImage" src="" alt="Вид проекта" style="display: none;">
+            <p id="descriptionText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
